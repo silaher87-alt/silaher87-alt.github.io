@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-GB">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MMT Primary Backup — Information</title><meta name="description" content="Information about a privately operated, non-trading scanner backup utility and its Google Drive integration.">
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17243a;background:#f7f9fc}
+*{box-sizing:border-box}body{margin:0;line-height:1.7}main{max-width:780px;margin:8vh auto;padding:0 24px 70px}
+header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #dfe5ec;padding-bottom:16px}
+a{color:#1554bd}header a{font-weight:600;text-decoration:none}.eyebrow{font-size:.86rem;letter-spacing:.09em;text-transform:uppercase;color:#607187}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:24px 0 18px}h2{font-size:1.25rem;margin-top:2.4rem}
+.lead{font-size:1.16rem;color:#40516a}.panel{background:#fff;border:1px solid #dfe5ec;border-radius:14px;padding:22px;margin:24px 0}
+p,li{max-width:75ch}ul{padding-left:22px}footer{margin-top:55px;border-top:1px solid #dfe5ec;padding-top:16px;font-size:.88rem;color:#607187}
+</style></head>
+<body><main>
+<header><strong>MMT Primary Backup</strong><nav><a href="./privacy.html">Privacy policy</a></nav></header>
+<p class="eyebrow">Private-use backup utility · United Kingdom</p>
+<h1>MMT Primary Backup</h1>
+<p class="lead">A private utility for securely backing up evidence produced by the owner's non-trading MMT Primary token-discovery scanner.</p>
+<div class="panel"><strong>Purpose</strong><p>When configured and authorised, the utility uses Google Drive to hold encrypted, recoverable copies of scanner market observations, source-only alert records, evidence logs, manifests and recovery records. The files are organised under a dedicated MMT Primary backup folder, separate from other projects.</p></div>
+<h2>How Google Drive access is used</h2>
+<p>The owner authorises a Google OAuth desktop client for unattended backup and recovery operations on their own account. The intended operations are uploading encrypted backup objects, checking those objects and restoring them for integrity verification. The utility is designed to operate only in its dedicated backup folder; Google OAuth permission may technically be broader than that folder, so the path boundary is enforced by the utility's configuration, not by a Google-side folder-only access grant.</p>
+<h2>Security and scope</h2>
+<ul>
+<li>Backup content and data filenames are designed to be encrypted before upload; category folder names may remain readable for organisation.</li>
+<li>No wallet management, token signing, transaction broadcasts or trading.</li>
+<li>Google OAuth secrets and recovery keys are not published on this website.</li>
+<li>This website does not log users in or handle Google tokens, scanner data or backup files.</li>
+<li>The backup utility is for its owner's use, not offered as a public storage service.</li>
+</ul>
+<h2>Status</h2>
+<p>This page describes the backup integration and its intended operation. It does not assert that a live scanner, continuous backup, Google Drive authorisation or full recovery qualification has been completed.</p>
+<p>Read the <a href="./privacy.html">privacy policy</a> for details of Google data access, use, retention and revocation.</p>
+<footer>MMT Primary Backup · Private-use documentation · Updated 9 November 2026</footer>
+</main></body></html>
