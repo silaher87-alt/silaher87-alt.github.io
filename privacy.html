@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MMT Primary Backup</title><meta name="description" content="Google Drive data access and privacy policy for the owner's MMT Primary Backup utility.">
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17243a;background:#f7f9fc}
+*{box-sizing:border-box}body{margin:0;line-height:1.7}main{max-width:780px;margin:8vh auto;padding:0 24px 70px}
+header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #dfe5ec;padding-bottom:16px}
+a{color:#1554bd}header a{font-weight:600;text-decoration:none}.eyebrow{font-size:.86rem;letter-spacing:.09em;text-transform:uppercase;color:#607187}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:24px 0 18px}h2{font-size:1.25rem;margin-top:2.4rem}
+.lead{font-size:1.16rem;color:#40516a}.panel{background:#fff;border:1px solid #dfe5ec;border-radius:14px;padding:22px;margin:24px 0}
+p,li{max-width:75ch}ul{padding-left:22px}footer{margin-top:55px;border-top:1px solid #dfe5ec;padding-top:16px;font-size:.88rem;color:#607187}
+</style></head>
+<body><main>
+<header><strong>MMT Primary Backup</strong><nav><a href="./">Home</a></nav></header>
+<p class="eyebrow">Privacy policy · Last updated 9 November 2026</p>
+<h1>Privacy Policy</h1>
+<p class="lead">This policy describes how the privately operated MMT Primary Backup utility is intended to use its owner's Google account for encrypted scanner-data backups. It is not a public consumer application.</p>
+<h2>1. What information may be accessed</h2>
+<p>With the owner's explicit Google OAuth consent, the utility may use Google Drive APIs to list folder entries, upload backup objects, verify or download uploaded objects and restore backup records. Although the application is designed to work only inside a dedicated MMT Primary backup folder, the OAuth scope selected may technically permit broader Drive access. Its folder restriction is a software control, not necessarily a Google-enforced folder-only permission.</p>
+<p>The app does not need Gmail or Google Photos content and is not designed to inspect unrelated Drive documents.</p>
+<h2>2. How information is used</h2>
+<p>Google Drive access is used only to store, validate, recover and manage owner-authorised backups of non-trading scanner observations, source-only alert records, evidence logs, manifests and recovery records. It is not used to create trading transactions, profile users, serve advertisements or train AI models.</p>
+<h2>3. Storage and security</h2>
+<p>When deployed, the backup client is designed to encrypt backup contents and file names locally before uploading to Google Drive. Organisational category folders and some account or file metadata (such as timestamps, sizes and folder labels) may remain visible to Google. OAuth tokens and encryption secrets are intended to be stored in access-restricted server configuration, not on this public website or in the GitHub repository. Encryption and recovery must be tested before a live backup service is considered ready.</p>
+<h2>4. Sharing and service providers</h2>
+<p>The operator does not sell or share Google user data with advertisers or unrelated third parties. Google Drive provides the authorised storage, and rclone is used as a local backup-transfer client. This public informational website is hosted by GitHub Pages; it does not itself receive OAuth tokens or stored backups. Google and GitHub process service data under their respective policies.</p>
+<h2>5. Retention and deletion</h2>
+<p>Backups are intended to be retained until the owner explicitly deletes them according to the project's retention and recovery rules. Revoking OAuth access prevents future authorised Drive operations but does not automatically remove already uploaded backup files. The owner can review and delete those files from their Google Drive account.</p>
+<h2>6. Revoking access</h2>
+<p>The owner may revoke the application's access through their Google Account's third-party connections/security settings, and may disable the backup client on the VPS. If access is revoked, automated backups and restores that depend on the connection will stop.</p>
+<h2>7. Google API Limited Use</h2>
+<p>The application's use of information received from Google APIs is intended to comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. Data is used only to provide the backup functionality described above.</p>
+<h2>8. Changes and contact</h2>
+<p>Material changes to the app's data access or handling will require an update to this policy. For questions, use the owner support contact identified on the application's Google OAuth consent screen. Do not submit credentials or sensitive backup data to a public GitHub issue.</p>
+<p><a href="./">Return to homepage</a></p>
+<footer>MMT Primary Backup · Privacy Policy · Updated 9 November 2026</footer>
+</main></body></html>
